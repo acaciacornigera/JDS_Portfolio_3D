@@ -90,8 +90,8 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[22px] max-w-3xl leading-[30px]'
         >
-          Some projects are online, others are underway and will be published throughout 2023, most of them
-          are related to Web3 and blockchain-based.
+          Some projects are live, others are in progress and will be released throughout 2023, most of them
+          are Web3-related and blockchain-based
         </motion.p>
       </div>
 

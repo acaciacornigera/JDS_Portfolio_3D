@@ -9,7 +9,7 @@ import { slideIn } from "../utils/motion";
 const Contact = () => {
     return (
         <div
-            className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden justify-center`}
+            className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden justify-center hidden sm:block`}
         >
             <motion.div
                 variants={slideIn("left", "tween", 0.2, 1)}
@@ -38,3 +38,4 @@ const Contact = () => {
 };
 
 export default SectionWrapper(Contact, "contact");
+

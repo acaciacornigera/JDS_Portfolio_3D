@@ -5,35 +5,34 @@ import { images } from "../assets";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto mt-5`}>
+    <section className={`relative w-full h-screen mx-auto mt-3`}>
       <div
-        className={`absolute inset-0 top-[100px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-10`}
-      // style={{ paddingLeft: "10px" }}
+        className={`absolute inset-0 top-[100px] max-w-7xl mx-auto ${styles.paddingX} flex-center sm:flex flex-row items-start gap-10`}
       >
-        <img src={images.jdsprofile} alt="JD's Profile" style={{ position: 'absolute', left: "-200px", width: "25%", height: "auto" }} />
+        <div className="hidden sm:block">
+          <img src={images.jdsprofile} alt="JD's Profile"
+            className='w-[100%] h-auto sm:w-[75%]'
+          />
+        </div>
 
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>
-        <div>
-          <p className={`${styles.heroHeadText} text-white`}
-            style={{ marginTop: '2rem' }}>
-            Hello, I'm <span className='text-[#915EFF]'>JD</span>
-          </p>
-          <p className={`${styles.heroSubText} text-white-100`}>
-            {/* Welcome to my website! <br className='sm:block hidden' /> // if want hide from sm */}
-            Welcome to my website!<br />
-          </p>
-        </div>
-        <div>
-          <p className={`${styles.heroSkillsText} text-white-100`}
-            style={{ marginTop: '50px', position: 'absolute', left: "725px" }}>
-            {/* Welcome to my website! <br className='sm:block hidden' /> // if want hide from sm */}
-            <span className='text-[#915EFF]'>Web3</span> & <span className='text-[#915EFF]'>Blockchain</span> Advocate<br />
-            Homemade <span className='text-[#915EFF]'>Geek</span> by nature<br />
-            <span className='text-[#915EFF]'>Finance</span> (wizard) by trade<br />
-          </p>
+        <div className="text-center sm:text-left">
+          <div>
+            <div className={`${styles.heroSubText} mt-2 text-white`} style={{ marginTop: '2rem' }}>
+              <p className={`${styles.heroHeadText} mt-2 text-white hidden sm:block`}>Hello, I'm <span className='text-[#915EFF]'>JD</span></p>
+              <p className={`${styles.heroSubText} mt-2 text-white block sm:hidden`}>Hello, I'm <span className='text-[#915EFF]'>JD</span></p>
+            </div>
+            <p className={`${styles.heroSkillsText}`}>Welcome to my website!</p>
+          </div>
+
+
+          <div className="">
+            <p className={`${styles.heroSkillsText} text-white-100`} style={{ marginTop: '2rem' }}>
+              <span className='text-[#915EFF]'>Web3</span> & <span className='text-[#915EFF]'>Blockchain</span> Advocate<br />
+              Homemade <span className='text-[#915EFF]'>Geek</span> by nature<br />
+              <span className='text-[#915EFF]'>Finance</span> (wizard) by trade<br />
+            </p>
+          </div>
+
         </div>
       </div>
 

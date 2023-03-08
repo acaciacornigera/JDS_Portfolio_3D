@@ -22,7 +22,7 @@ const Tech = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[22px] text-center max-w-3xl leading-[28px]'
         >
-          What I use on a daily basis and what I will fully masterize in 2023
+          Some of the tools I use on a daily basis and others I will fully master in 2023
         </motion.p>
       </div>
 
