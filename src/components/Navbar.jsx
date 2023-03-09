@@ -32,28 +32,28 @@ const Navbar = () => {
         } w-full flex-column py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
         }`}
     >
-      <div className='justify-between text-center sm:flex sm:w-full'> {/*max-w-8xl mx-auto*/}
-          <div className='font-bold justify-content flex-center gap-3 sm:flex'>
-            <div className='text-[24px] sm:text-[22px] text-[#915EFF]'>Jean-David Sidler</div>
-            <div className="sm:text-[22px] sm:block hidden">|</div>
-            <div className="text-[16px] sm:text-[22px]">The CFO with a tech twist</div>
+      <div className='justify-between text-center md:flex md:w-full'> {/*max-w-8xl mx-auto*/}
+          <div className='font-bold justify-content flex-center gap-3 md:flex'>
+            <div className='text-[24px] md:text-[22px] text-[#915EFF]'>Jean-David Sidler</div>
+            <div className="md:text-[22px] md:block hidden">|</div>
+            <div className="text-[16px] md:text-[22px]">The CFO with a tech twist</div>
           </div>
 
-          <div className="sm:block hidden">
+          <div className="hidden md:block">
             <div style={{ display: 'inline-block', marginRight: '20px', backgroundColor: '#0077B5', borderRadius: '50%', padding: '10px' }}>
               <a href="https://www.linkedin.com/in/jdsidler" target="blank">
-                <BsLinkedin style={{ width: '30px', height: 'auto', fill: '#fff' }} />
+                <BsLinkedin style={{ width: '20px', height: 'auto', fill: '#fff' }} />
               </a>
             </div>
             <div style={{ display: 'inline-block', marginRight: '20px', backgroundColor: '#FFFFFF', borderRadius: '50%', padding: '10px' }}>
               <a href="https://github.com/acaciacornigera/" target="blank">
-                <BsGithub style={{ width: '30px', height: 'auto', fill: '#000000' }} />
+                <BsGithub style={{ width: '20px', height: 'auto', fill: '#000000' }} />
               </a>
             </div>
           </div>
 
         <div>
-          <ul className='list-none flex-row gap-10 hidden sm:flex'>
+          <ul className='list-none flex-row gap-10 hidden md:flex'>
             {navLinks.map((nav) => (
               <li
                 key={nav.id}
@@ -68,7 +68,7 @@ const Navbar = () => {
         </div>
 
 
-        <div className='sm:hidden flex flex-1 justify-center'>
+        <div className='md:hidden flex flex-1 justify-center'>
           <img
             src={toggle ? images.close : images.menu}
             alt='menu'

@@ -5,33 +5,34 @@ import { images } from "../assets";
 
 const Hero = () => {
   return (
-    <section className={`md:flex relative w-full h-screen mx-auto mt-3`}>
+    <section className={`relative w-full h-screen mx-auto mt-3`}>
       <div
-        className={`absolute inset-0 top-[100px] max-w-7xl mx-auto ${styles.paddingX} flex-center md:flex flex-row items-start gap-10`}
+        className={`absolute inset-0 top-[100px] max-w-7xl mx-auto ${styles.paddingX} flex-center sm:flex flex-row items-start gap-10`}
       >
-      
-        <div className="hidden md:flex-none md:block">
+        <div className="hidden sm:block">
           <img src={images.jdsprofile} alt="JD's Profile"
-            className='w-[100%] h-auto md:w-[80%]'
+            className='w-[100%] h-auto sm:w-[75%]'
           />
         </div>
 
-          <div className="text-center md:flex-1">
+        <div className="text-center sm:text-left">
+          <div>
             <div className={`${styles.heroSubText} mt-2 text-white`} style={{ marginTop: '2rem' }}>
-              <p className={`${styles.heroHeadText} mt-2 text-white hidden md:block`}>Hello, I'm <span className='text-[#915EFF]'>JD</span></p>
-              <p className={`${styles.heroSubText} mt-2 text-white block md:hidden`}>Hello, I'm <span className='text-[#915EFF]'>JD</span></p>
-              <p className={`${styles.heroSubText}`}>Welcome to my website!</p>
+              <p className={`${styles.heroHeadText} mt-2 text-white hidden sm:block`}>Hello, I'm <span className='text-[#915EFF]'>JD</span></p>
+              <p className={`${styles.heroSubText} mt-2 text-white block sm:hidden`}>Hello, I'm <span className='text-[#915EFF]'>JD</span></p>
             </div>
+            <p className={`${styles.heroSkillsText}`}>Welcome to my website!</p>
           </div>
 
-          <div className="text-center md:flex-none md:text-left">
-              <p className={`${styles.heroSkillsText} text-white-100`} style={{ marginTop: '2rem' }}>
+          <div className="flex-wrap nowrap">
+            <p className={`${styles.heroSkillsText} text-white-100`} style={{ marginTop: '2rem' }}>
               <span className='text-[#915EFF]'>Web3</span> & <span className='text-[#915EFF]'>Blockchain</span> Advocate<br />
               Homemade <span className='text-[#915EFF]'>Geek</span> by nature<br />
               <span className='text-[#915EFF]'>Finance</span> (wizard) by trade<br />
             </p>
           </div>
-      
+
+        </div>
       </div>
 
       <ComputersCanvas />
